@@ -1,0 +1,47 @@
+.back {
+  /* background: rgb(40,142,117);
+    background: radial-gradient(circle, rgba(40,142,117,1) 14%, rgba(5,17,59,1) 66%); */
+    /* background: rgb(53,182,157);
+    background: linear-gradient(60deg, rgba(53,182,157,1) 0%, rgba(7,25,84,1) 45%); */
+  background: #05113b;
+  height: 100vh;
+}
+
+.tsparticles-canvas-el , #tsparticles {
+    height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 42%;
+  left: 38%;
+  display: flex;
+  justify-self: center;
+  color: white;
+  text-align: center;
+}
+
+.text {
+    color: white;
+    font-size: 65px;
+    text-align: center;
+    /* font-weight: 400; */
+}
+
+@media screen and (max-width: 768px) {
+    .overlay {
+      position: absolute;
+      top: 35%;
+      left: 17%;
+      text-align: center;
+    }
+    /* .carousel-inner {
+      height: 100vh;
+    } */
+  
+    .text {
+        color: white;
+        font-size: 25px;
+        font-weight: 400;
+    }
+  }
