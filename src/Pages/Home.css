@@ -1,0 +1,43 @@
+.back {
+    background-image: url("../assets/background.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    opacity: 0.95;
+}
+
+.text {
+    color: skyblue;
+    margin-top: 250px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: "bold"
+}
+
+.customco {
+    display: block;
+}
+
+@media screen and (max-width : 768px) {
+    .back {
+        background-image: url("../assets/background.jpg");
+        background-position: center;
+        background-size: cover;
+        color: white;
+        height: 100%;
+        opacity: 0.95;
+    }
+
+    .text {
+        color: skyblue;
+        text-align: left;
+        margin-top: 20px;
+        font-weight: "bold"
+    }
+
+    .customco {
+        display: none;
+    }
+
+}
