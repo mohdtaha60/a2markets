@@ -20,7 +20,7 @@ export default function Cardd() {
   return (
     <div>
       <animated.div
-        class="card"
+        class="cardd"
         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
         style={{ transform: props.xys.interpolate(trans) }}

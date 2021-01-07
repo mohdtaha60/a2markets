@@ -1,0 +1,154 @@
+.hlogo {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  margin-top: -15px;
+}
+
+
+.mcd {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 70px;
+  width: 70px;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+}
+.mcd:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.amazon {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 150px;
+  width: 150px;
+  margin-top: -30px;
+  padding: 10px;
+  position: relative;
+}
+.amazon:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.hp {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  height: 70px;
+  width: 70px;
+  margin-top: -50px;
+  margin-left: -25px;
+  padding: 10px;
+  float: right;
+}
+.facebook {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 100px;
+  width: 100px;
+  margin-left: -10px;
+  margin-top: 40px;
+  padding: 10px;
+}
+.facebook:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.coke {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 100px;
+  width: 100px;
+  margin-top: -30px;
+  margin-left: -15px;
+  padding: 10px;
+}
+.coke:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.apple {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 150px;
+  width: 150px;
+  margin-top: -30px;
+  margin-left: -20px;
+  padding: 10px;
+}
+.apple:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.nike {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  margin-top: 25px;
+  margin-left: 50px;
+}
+
+
+.spotify {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 110px;
+  width: 110px;
+  margin-top: -35px;
+  margin-left: 60px;
+  padding: 10px;
+}
+
+.spotify:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.twitter {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  margin-top: 32px;
+  margin-left: -30px;
+}
+
+.twitter:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.netflix {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 130px;
+  width: 130px;
+  margin-left: 18px;
+  margin-top: -70px;
+  padding: 10px;
+}
+.netflix:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.microsoft {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  height: 100px;
+  width: 100px;
+  margin-left: -20px;
+  margin-top: -40px;
+  padding: 10px;
+}
+
+.microsoft:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.disney {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  margin-top: 42px;
+}

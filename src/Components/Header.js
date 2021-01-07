@@ -1,14 +1,32 @@
-import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import React, { useEffect, useState } from "react";
+import { Nav, Navbar, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "./logo192.png";
 
 export default function Header() {
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        handleShow(true);
+      } else {
+        handleShow(false);
+      }
+    });
+    // return () => {
+    //   window.removeEventListener("scroll","");
+    // };
+  }, []);
+
   return (
     <div>
       <Navbar
         fixed="top"
-        className="NavMain-StyledNavbar-module--cls2--2pVZv"
+        className={`NavMain-StyledNavbar-module--cls2--2pVZv ${
+          show && "nav_black"
+        }`}
         collapseOnSelect
         expand="lg"
       >
@@ -25,29 +43,28 @@ export default function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link style={{ color: "white" }} href="#home">
+            <Link className="navh" to="/">
               Home
-            </Nav.Link>
-            <Nav.Link style={{ color: "white" }} href="#member">
-              Member Login
-            </Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link style={{ color: "white" }} href="#deets">
+            </Link>
+            <Link className="navh" to="/trading-platforms">
               Trading Platforms
-            </Nav.Link>
-            <Nav.Link style={{ color: "white" }} eventKey={2} href="#memes">
+            </Link>
+            <Link className="navh" to="/">
               Assets
-            </Nav.Link>
-            <Nav.Link style={{ color: "white" }} eventKey={2} href="#memes">
+            </Link>
+            <Link className="navh" to="/">
+              {" "}
               Account Types
-            </Nav.Link>
-            <Nav.Link style={{ color: "white" }} eventKey={2} href="#memes">
+            </Link>
+            <Link className="navh" to="/">
               Economic Calendar
-            </Nav.Link>
-            <Nav.Link style={{ color: "white" }} eventKey={2} href="#memes">
+            </Link>
+            <Link className="navh" to="/">
               Education Webpage
-            </Nav.Link>
+            </Link>
+            <Link className="navBtn" to="/">
+              <Button size="sm">Member Login</Button>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

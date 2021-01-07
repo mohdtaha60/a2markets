@@ -3,7 +3,9 @@ import React, { useState, useEffect } from "react";
 import LoadingScreen from "./Components/LoadingScreen";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import "./App.css";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Trading from "./Pages/Trading";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -16,10 +18,15 @@ function App() {
   }, []);
 
   return (
-    <div style={{overflowX:"hidden"}}>
+    <div className="font" style={{ overflowX: "hidden" }}>
       {loading === false ? (
         <div className="App">
-          <Home />
+          <BrowserRouter>
+            <Switch>
+              <Route path="/" exact component={Home} />
+              <Route path="/trading-platforms" exact component={Trading} />
+            </Switch>
+          </BrowserRouter>
         </div>
       ) : (
         <LoadingScreen />
